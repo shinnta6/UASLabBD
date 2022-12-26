@@ -1,0 +1,22 @@
+1. Inner Join
+	select cities.city_name, districts.dis_name from cities, districts where cities.city_name=districts.dis_name limit 5;
+
+2. Union
+	select dis_name from districts
+    -> union
+    -> select city_name from cities limit 15;
+
+3. Straight Join
+	select * from cities
+    -> straight_join provinces limit 15;
+
+4. Distinct
+	select distinct prov_id
+    -> from cities;
+
+5. Order BY
+	select prov_id, prov_name
+    -> from provinces
+    -> order by prov_name limit 30;
+	
+	
